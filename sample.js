@@ -36,14 +36,14 @@ AFRAME.registerComponent('samplehandler', {
             if (scene.hasLoaded){
                 const plane = document.getElementById("geo-plane")
                 //console.log("pos:", plane.object3D.position);
-                plane.object3D.position.x += 10;
+                plane.object3D.position.x -= 10;
             }
         });
         let buttonRight = document.getElementById("button-right");
         buttonRight.addEventListener('click', () => {
             if (scene.hasLoaded){
                 const plane = document.getElementById("geo-plane")
-                plane.object3D.position.x -= 10;
+                plane.object3D.position.x += 10;
             }
         });
         let buttonUp = document.getElementById("button-up");
