@@ -4,7 +4,7 @@
 
 This is a sample with [A-Frame](https://aframe.io/) and [AR.js](https://ar-js-org.github.io/AR.js-Docs/). Displays a video that can be operated with buttons on the plane.
 <br><br>
-[Video]() and [Demo]().
+[Video]() and [Demo](https://followthedarkside.github.io/aframe-arjs-plane-video/).
 
 ## Reference
 - Marker Image from [国立国会図書館「NDLイメージバンク」](https://rnavi.ndl.go.jp/imagebank/index.html)
