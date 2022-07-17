@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <title>AR.js Image Tracking Sample</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <script src='./sample.js'></script>
+</head>
+<body>
+    <div class="arjs-loader">
+        <div>Loading...</div>
+    </div>
+    <div id="video-button">
+        <div id="text-video">PLAY</div>
+    </div>
+    <div class="control-button" id="button-left">
+        <div>L</div>
+    </div>
+    <div class="control-button" id="button-right">
+        <div>R</div>
+    </div>
+    <div class="control-button" id="button-up">
+        <div>U</div>
+    </div>
+    <div class="control-button" id="button-down">
+        <div>D</div>
+    </div>
+
+    <a-scene
+        vr-mode-ui="enabled: false;"
+        renderer='antialias: true; alpha: true; precision: mediump;'
+        embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'
+    >
+        <a-assets>
+            <video id="video" src="./assets/lerp.mp4"  autoplay="true"
+            preload="auto" loop="true" webkit-playsinline playsinline></video>
+        </a-assets>
+
+        <!-- <a-nft
+            samplehandler 
+            type='nft' url="./assets/nft/kachoga"
+            smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5"
+        > -->
+        <a-nft
+            samplehandler 
+            type='nft' url="https://followthedarkside.github.io/arjs-image-tracking-sample/assets/nft/kachoga"
+            smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5"
+        >
+            <a-plane position="10 10 14" rotation="-90 0 0" width="32" height="32" color="#7BC8A4"></a-plane>
+            <a-entity id="geo-plane" geometry="primitive: plane; width: 30; height: 90" material="src: #video" position="0 15 0" rotation="-90 0 0"　
+            animation="property: scale; from: 1 0 1; to: 1 1 1; dur: 500; loop: false; easing: linear; startEvents: geo-plane-scaled"></a-entity>
+        </a-nft>
+		<a-entity camera></a-entity>
+	</a-scene>
+</body>

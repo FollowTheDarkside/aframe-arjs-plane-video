@@ -1,0 +1,102 @@
+body {
+    margin : 0px;
+    overflow: hidden;
+}
+
+.arjs-loader {
+    position: absolute;
+    height: 20%;
+    width: 50%;
+    top: 40%;
+    left: 25%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arjs-loader div {
+    text-align: center;
+    font-family: arial;
+    font-size: 1.25em;
+    color: white;
+    z-index: 5;
+}
+
+#video-button {
+    transition: opacity 0.5s, visibility 1.0s;
+    opacity: 0.5;
+    visibility: visible;
+    position: absolute;
+    height: 10%;
+    width: 20%;
+    top: 90%;
+    left: 80%;
+    background-color: rgb(255, 255, 255);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#video-button:hover {
+    opacity: 1.0;
+}
+#video-button.change{
+    opacity: 0.0;
+    visibility: hidden;
+}
+#video-button div {
+    text-align: center;
+    font-family: arial;
+    font-size: 1.25em;
+    color: black;
+    z-index: 5;
+}
+
+.control-button {
+    transition: opacity 0.5s;
+    opacity: 0.5;
+    visibility: visible;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.control-button:hover {
+    opacity: 1.0;
+}
+.control-button div {
+    text-align: center;
+    font-family: arial;
+    font-size: 1.25em;
+    color: black;
+    z-index: 5;
+}
+#button-left {
+    height: 20%;
+    width: 10%;
+    top: 40%;
+    left: 0%;
+}
+#button-right {
+    height: 20%;
+    width: 10%;
+    top: 40%;
+    left: 90%;
+}
+#button-up {
+    height: 10%;
+    width: 20%;
+    top: 0%;
+    left: 40%;
+}
+#button-down {
+    height: 10%;
+    width: 20%;
+    top: 90%;
+    left: 40%;
+}
