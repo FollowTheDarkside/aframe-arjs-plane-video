@@ -1,6 +1,6 @@
-# AFrame AR.js Plane Video
+# A-Frame AR.js Plane Video
 ## Overview
-![aframe-arjs-plane-video]()
+![aframe-arjs-plane-video_2 1 1](https://user-images.githubusercontent.com/9309605/179468042-39173967-b788-45a8-82d1-92e7fffab486.jpg)
 
 This is a sample with [A-Frame](https://aframe.io/) and [AR.js](https://ar-js-org.github.io/AR.js-Docs/). Displays a video that can be operated with buttons on the plane.
 <br><br>
